@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TanvirArjel.EFCore.GenericRepository</name>
+    </assembly>
+    <members>
+        <member name="T:TanvirArjel.EFCore.GenericRepository.IRepository">
+            <summary>
+            Contains all the repository methods. If you register the multiple DbContexts, it will use the last one.
+            To use specific <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/> please use <see cref="T:TanvirArjel.EFCore.GenericRepository.IRepository`1"/>.
+            </summary>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.BeginTransactionAsync(System.Data.IsolationLevel,System.Threading.CancellationToken)">
+            <summary>
+            Begin a new database transaction.
+            </summary>
+            <param name="isolationLevel"><see cref="T:System.Data.IsolationLevel"/> to be applied on this transaction. (Default to <see cref="F:System.Data.IsolationLevel.Unspecified"/>).</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns a <see cref="T:Microsoft.EntityFrameworkCore.Storage.IDbContextTransaction"/> instance.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.InsertAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            This method takes <typeparamref name="TEntity"/>, insert it into database and returns <see cref="T:System.Threading.Tasks.Task`1"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entity">The entity to be inserted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.InsertAsync``1(System.Collections.Generic.IEnumerable{``0},System.Threading.CancellationToken)">
+            <summary>
+            This method takes <typeparamref name="TEntity"/>, insert it into the database and returns <see cref="T:System.Threading.Tasks.Task"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entities">The entities to be inserted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.UpdateAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            This method takes <typeparamref name="TEntity"/>, send update operation to the database and returns <see cref="T:System.Void"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entity">The entity to be updated.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.UpdateAsync``1(System.Collections.Generic.IEnumerable{``0},System.Threading.CancellationToken)">
+            <summary>
+            This method takes <see cref="T:System.Collections.Generic.IEnumerable`1"/> of entities, send update operation to the database and returns <see cref="T:System.Void"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entities">The entities to be updated.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.DeleteAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            This method takes an entity of type <typeparamref name="TEntity"/>, delete the entity from database and returns <see cref="T:System.Void"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entity">The entity to be deleted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.DeleteAsync``1(System.Collections.Generic.IEnumerable{``0},System.Threading.CancellationToken)">
+            <summary>
+            This method takes <see cref="T:System.Collections.Generic.IEnumerable`1"/> of entities, delete those entities from database and returns <see cref="T:System.Void"/>.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entities">The list of entities to be deleted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.ExecuteSqlCommandAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Execute raw sql command against the configured database asynchronously.
+            </summary>
+            <param name="sql">The sql string.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.ExecuteSqlCommandAsync(System.String,System.Object[])">
+            <summary>
+            Execute raw sql command against the configured database asynchronously.
+            </summary>
+            <param name="sql">The sql string.</param>
+            <param name="parameters">The paramters in the sql string.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.ExecuteSqlCommandAsync(System.String,System.Collections.Generic.IEnumerable{System.Object},System.Threading.CancellationToken)">
+            <summary>
+            Execute raw sql command against the configured database asynchronously.
+            </summary>
+            <param name="sql">The sql string.</param>
+            <param name="parameters">The paramters in the sql string.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.ClearChangeTracker">
+            <summary>
+            Reset the DbContext state by removing all the tracked and attached entities.
+            </summary>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Add``1(``0)">
+            <summary>
+            This method takes an <typeparamref name="TEntity"/> object, mark the object as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Added"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entity"/> to be added.</typeparam>
+            <param name="entity">The <typeparamref name="TEntity"/> object to be inserted to the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.AddAsync``1(``0,System.Threading.CancellationToken)">
+            <summary>
+            This method takes an object of <typeparamref name="TEntity"/>, adds it to the change tracker and will
+            be inserted into the database when <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)" /> is called.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entity">The entity to be inserted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Add``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            This method takes <see cref="T:System.Collections.Generic.IEnumerable`1"/> objects, mark the objects as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Added"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entities"/> to be added.</typeparam>
+            <param name="entities">The <typeparamref name="TEntity"/> objects to be inserted to the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.AddAsync``1(System.Collections.Generic.IEnumerable{``0},System.Threading.CancellationToken)">
+            <summary>
+            This method takes a collection of <typeparamref name="TEntity"/> object, adds them to the change tracker and will
+            be inserted into the database when <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)" /> is called.
+            </summary>
+            <typeparam name="TEntity">The type of the entity.</typeparam>
+            <param name="entities">The entities to be inserted.</param>
+            <param name="cancellationToken"> A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Update``1(``0)">
+            <summary>
+            This method takes an <typeparamref name="TEntity"/> object, mark the object as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Modified"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entity"/> to be marked as modified.</typeparam>
+            <param name="entity">The <typeparamref name="TEntity"/> object to be updated to the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Update``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            This method takes <see cref="T:System.Collections.Generic.IEnumerable`1"/> objects, mark the objects as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Modified"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entities"/> to be marked as modified.</typeparam>
+            <param name="entities">The entity objects to be updated to the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Remove``1(``0)">
+            <summary>
+            This method takes an <typeparamref name="TEntity"/> object, mark the object as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Deleted"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entity"/> to be marked as deleted.</typeparam>
+            <param name="entity">The <typeparamref name="TEntity"/> object to be deleted from the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.Remove``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            This method takes <see cref="T:System.Collections.Generic.IEnumerable`1"/> objects, mark the objects as <see cref="F:Microsoft.EntityFrameworkCore.EntityState.Deleted"/> to the <see cref="T:Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker"/> of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.
+            <para>
+            Call <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/> to persist the changes to the database.
+            </para>
+            </summary>
+            <typeparam name="TEntity">The type of the <paramref name="entities"/> to be marked as deleted.</typeparam>
+            <param name="entities">The <typeparamref name="TEntity"/> objects to be deleted from the database on <see cref="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)"/>.</param>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.IRepository.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>
+            Saves all changes made in this context to the database.
+            </summary>
+            <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> to observe while waiting for the task to complete.</param>
+            <returns>
+            A <see cref="T:System.Threading.Tasks.Task"/> that represents the asynchronous save operation. The task result contains the number of state entries written to the database.
+            </returns>
+        </member>
+        <member name="T:TanvirArjel.EFCore.GenericRepository.IRepository`1">
+            <summary>
+            Contains all the repository methods.
+            </summary>
+            <typeparam name="TDbContext">The type of the <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.</typeparam>
+        </member>
+        <member name="T:TanvirArjel.EFCore.GenericRepository.ServiceCollectionExtensions">
+            <summary>
+            Contain all the service collection extension methods.
+            </summary>
+        </member>
+        <member name="M:TanvirArjel.EFCore.GenericRepository.ServiceCollectionExtensions.AddGenericRepository``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Add generic repository services to the .NET Dependency Injection container.
+            </summary>
+            <typeparam name="TDbContext">Your EF Core <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/>.</typeparam>
+            <param name="services">The type to be extended.</param>
+            <param name="lifetime">The life time of the service.</param>
+            <returns>Retruns <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="services"/> is <see langword="null"/>.</exception>
+        </member>
+    </members>
+</doc>
