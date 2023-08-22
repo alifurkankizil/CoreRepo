@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+    <ItemGroup>
         <PackageReference Include="AutoMapper" Version="12.0.1" />
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
@@ -20,8 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\Downloads\EFCore.GenericRepository-master\src\TanvirArjel.EFCore.GenericRepository\TanvirArjel.EFCore.GenericRepository.csproj" />
-      <ProjectReference Include="..\..\..\Downloads\EFCore.GenericRepository-master\src\TanvirArjel.EFCore.QueryRepository\TanvirArjel.EFCore.QueryRepository.csproj" />
       <ProjectReference Include="..\CoreRepo.Data\CoreRepo.Data.csproj" />
     </ItemGroup>
 

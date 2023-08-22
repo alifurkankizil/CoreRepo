@@ -15,9 +15,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.4",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.7",
-          "Swashbuckle.AspNetCore": "6.4.0",
-          "TanvirArjel.EFCore.GenericRepository": "6.0.0",
-          "TanvirArjel.EFCore.QueryRepository": "1.5.0"
+          "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
           "CoreRepo.Api.dll": {}
@@ -1235,7 +1233,7 @@
       "Microsoft.EntityFrameworkCore.Design/7.0.5": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
           "Mono.TextTemplating": "2.2.1"
         },
@@ -1246,22 +1244,22 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
-            "assemblyVersion": "7.0.10.0",
-            "fileVersion": "7.0.1023.36204"
+            "assemblyVersion": "7.0.5.0",
+            "fileVersion": "7.0.523.16503"
           }
         }
       },
       "Microsoft.EntityFrameworkCore.SqlServer/7.0.5": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "5.0.1",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.10"
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {
@@ -2091,11 +2089,11 @@
           "System.Runtime.Extensions": "4.3.0"
         }
       },
-      "System.Linq.Dynamic.Core/1.2.25": {
+      "System.Linq.Dynamic.Core/1.2.22": {
         "runtime": {
-          "lib/net7.0/System.Linq.Dynamic.Core.dll": {
-            "assemblyVersion": "1.2.25.0",
-            "fileVersion": "1.2.25.0"
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.2.22.0",
+            "fileVersion": "1.2.22.0"
           }
         }
       },
@@ -2596,34 +2594,41 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "TanvirArjel.EFCore.GenericRepository/6.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
+          "TanvirArjel.EFCore.QueryRepository": "1.5.0"
+        },
+        "runtime": {
+          "lib/net7.0/TanvirArjel.EFCore.GenericRepository.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "TanvirArjel.EFCore.QueryRepository/1.5.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
+          "System.Linq.Dynamic.Core": "1.2.22"
+        },
+        "runtime": {
+          "lib/net7.0/TanvirArjel.EFCore.QueryRepository.dll": {
+            "assemblyVersion": "1.5.0.0",
+            "fileVersion": "1.5.0.0"
+          }
+        }
+      },
       "CoreRepo.Data/1.0.0": {
         "dependencies": {
           "Bogus": "34.0.2",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
+          "TanvirArjel.EFCore.GenericRepository": "6.0.0",
           "TanvirArjel.EFCore.QueryRepository": "1.5.0"
         },
         "runtime": {
           "CoreRepo.Data.dll": {}
-        }
-      },
-      "TanvirArjel.EFCore.GenericRepository/6.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
-          "TanvirArjel.EFCore.QueryRepository": "1.5.0"
-        },
-        "runtime": {
-          "TanvirArjel.EFCore.GenericRepository.dll": {}
-        }
-      },
-      "TanvirArjel.EFCore.QueryRepository/1.5.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
-          "System.Linq.Dynamic.Core": "1.2.25"
-        },
-        "runtime": {
-          "TanvirArjel.EFCore.QueryRepository.dll": {}
         }
       }
     }
@@ -3201,12 +3206,12 @@
       "path": "microsoft.entityframeworkcore.design/7.0.5",
       "hashPath": "microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
+    "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PO2QB2Du+pW210UHmepYR12bk+ZOZJCiNkA7zEAxWs+vzvrRAMsUPlDlfgX2LXE7NBsnb0uvZp7a1/qqKf3fRQ==",
-      "path": "microsoft.entityframeworkcore.relational/7.0.10",
-      "hashPath": "microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512"
+      "sha512": "sha512-u/33DC4S6g2hpMPgBc5Kdnlz//nqHR5c/ovgjtiP/wQ7sOd0EOdygVzUJAAOxCwbtAHDsJXS9Vc3jLFYq0yu8Q==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.5",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/7.0.5": {
       "type": "package",
@@ -3901,12 +3906,12 @@
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Dynamic.Core/1.2.25": {
+    "System.Linq.Dynamic.Core/1.2.22": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qpkqDHLNxGR1qBNrdnnPfJFfsKSWy3nUELC/BWxP8vwSaf8vVwecZzXOV4B52yOGit94g0pLWJEe30a4L1tE7g==",
-      "path": "system.linq.dynamic.core/1.2.25",
-      "hashPath": "system.linq.dynamic.core.1.2.25.nupkg.sha512"
+      "sha512": "sha512-PB57h0KkIvCF1X/x7iZZKdgiQSo/5geNrConfaw4KEsbyX25MuAEcLOc5RF5GNycSfC7qwaL4L8Mm6b8uMmcAw==",
+      "path": "system.linq.dynamic.core/1.2.22",
+      "hashPath": "system.linq.dynamic.core.1.2.22.nupkg.sha512"
     },
     "System.Linq.Expressions/4.3.0": {
       "type": "package",
@@ -4272,17 +4277,21 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "CoreRepo.Data/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TanvirArjel.EFCore.GenericRepository/6.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BzQiDTk96Gmqjd3BD+j2Ek8AQIoqWaWvE64DpkTZ0vXJwMqm6gTPkRz8NxGdn2TYTYq211oKAdfmsWexPB++HQ==",
+      "path": "tanvirarjel.efcore.genericrepository/6.0.0",
+      "hashPath": "tanvirarjel.efcore.genericrepository.6.0.0.nupkg.sha512"
     },
     "TanvirArjel.EFCore.QueryRepository/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3O5IKLv/dt979v5mfqPCENGEwwyXcrU7nteruINqBLgJcYmJ1hCWIaVwaj7G/szFJ+yl7mQpazjGOQXvSa6ymw==",
+      "path": "tanvirarjel.efcore.queryrepository/1.5.0",
+      "hashPath": "tanvirarjel.efcore.queryrepository.1.5.0.nupkg.sha512"
+    },
+    "CoreRepo.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

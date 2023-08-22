@@ -222,10 +222,10 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "compile": {
@@ -798,15 +798,15 @@
           }
         }
       },
-      "System.Linq.Dynamic.Core/1.2.25": {
+      "System.Linq.Dynamic.Core/1.2.22": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Linq.Dynamic.Core.dll": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
             "related": ".pdb;.xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Linq.Dynamic.Core.dll": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -1147,18 +1147,38 @@
           }
         }
       },
-      "TanvirArjel.EFCore.QueryRepository/1.5.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+      "TanvirArjel.EFCore.GenericRepository/6.0.0": {
+        "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "7.0.0",
-          "System.Linq.Dynamic.Core": "1.2.0"
+          "TanvirArjel.EFCore.QueryRepository": "1.5.0"
         },
         "compile": {
-          "bin/placeholder/TanvirArjel.EFCore.QueryRepository.dll": {}
+          "lib/net7.0/TanvirArjel.EFCore.GenericRepository.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "bin/placeholder/TanvirArjel.EFCore.QueryRepository.dll": {}
+          "lib/net7.0/TanvirArjel.EFCore.GenericRepository.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "TanvirArjel.EFCore.QueryRepository/1.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0",
+          "System.Linq.Dynamic.Core": "1.2.22"
+        },
+        "compile": {
+          "lib/net7.0/TanvirArjel.EFCore.QueryRepository.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/TanvirArjel.EFCore.QueryRepository.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -1467,17 +1487,17 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.10": {
-      "sha512": "PO2QB2Du+pW210UHmepYR12bk+ZOZJCiNkA7zEAxWs+vzvrRAMsUPlDlfgX2LXE7NBsnb0uvZp7a1/qqKf3fRQ==",
+    "Microsoft.EntityFrameworkCore.Relational/7.0.5": {
+      "sha512": "u/33DC4S6g2hpMPgBc5Kdnlz//nqHR5c/ovgjtiP/wQ7sOd0EOdygVzUJAAOxCwbtAHDsJXS9Vc3jLFYq0yu8Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/7.0.10",
+      "path": "microsoft.entityframeworkcore.relational/7.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.7.0.10.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
@@ -2464,10 +2484,10 @@
         "system.io.nuspec"
       ]
     },
-    "System.Linq.Dynamic.Core/1.2.25": {
-      "sha512": "qpkqDHLNxGR1qBNrdnnPfJFfsKSWy3nUELC/BWxP8vwSaf8vVwecZzXOV4B52yOGit94g0pLWJEe30a4L1tE7g==",
+    "System.Linq.Dynamic.Core/1.2.22": {
+      "sha512": "PB57h0KkIvCF1X/x7iZZKdgiQSo/5geNrConfaw4KEsbyX25MuAEcLOc5RF5GNycSfC7qwaL4L8Mm6b8uMmcAw==",
       "type": "package",
-      "path": "system.linq.dynamic.core/1.2.25",
+      "path": "system.linq.dynamic.core/1.2.22",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2492,9 +2512,6 @@
         "lib/net6.0/System.Linq.Dynamic.Core.dll",
         "lib/net6.0/System.Linq.Dynamic.Core.pdb",
         "lib/net6.0/System.Linq.Dynamic.Core.xml",
-        "lib/net7.0/System.Linq.Dynamic.Core.dll",
-        "lib/net7.0/System.Linq.Dynamic.Core.pdb",
-        "lib/net7.0/System.Linq.Dynamic.Core.xml",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.dll",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.pdb",
         "lib/netcoreapp2.1/System.Linq.Dynamic.Core.xml",
@@ -2515,7 +2532,7 @@
         "lib/uap10.0.10240/System.Linq.Dynamic.Core.pri",
         "lib/uap10.0.10240/System.Linq.Dynamic.Core.xml",
         "logo.png",
-        "system.linq.dynamic.core.1.2.25.nupkg.sha512",
+        "system.linq.dynamic.core.1.2.22.nupkg.sha512",
         "system.linq.dynamic.core.nuspec"
       ]
     },
@@ -3530,10 +3547,45 @@
         "version.txt"
       ]
     },
+    "TanvirArjel.EFCore.GenericRepository/6.0.0": {
+      "sha512": "BzQiDTk96Gmqjd3BD+j2Ek8AQIoqWaWvE64DpkTZ0vXJwMqm6gTPkRz8NxGdn2TYTYq211oKAdfmsWexPB++HQ==",
+      "type": "package",
+      "path": "tanvirarjel.efcore.genericrepository/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/TanvirArjel.EFCore.GenericRepository.dll",
+        "lib/net6.0/TanvirArjel.EFCore.GenericRepository.xml",
+        "lib/net7.0/TanvirArjel.EFCore.GenericRepository.dll",
+        "lib/net7.0/TanvirArjel.EFCore.GenericRepository.xml",
+        "lib/netstandard2.1/TanvirArjel.EFCore.GenericRepository.dll",
+        "lib/netstandard2.1/TanvirArjel.EFCore.GenericRepository.xml",
+        "tanvirarjel.efcore.genericrepository.6.0.0.nupkg.sha512",
+        "tanvirarjel.efcore.genericrepository.nuspec"
+      ]
+    },
     "TanvirArjel.EFCore.QueryRepository/1.5.0": {
-      "type": "project",
-      "path": "../../../Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj",
-      "msbuildProject": "../../../Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
+      "sha512": "3O5IKLv/dt979v5mfqPCENGEwwyXcrU7nteruINqBLgJcYmJ1hCWIaVwaj7G/szFJ+yl7mQpazjGOQXvSa6ymw==",
+      "type": "package",
+      "path": "tanvirarjel.efcore.queryrepository/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/TanvirArjel.EFCore.QueryRepository.dll",
+        "lib/net6.0/TanvirArjel.EFCore.QueryRepository.xml",
+        "lib/net7.0/TanvirArjel.EFCore.QueryRepository.dll",
+        "lib/net7.0/TanvirArjel.EFCore.QueryRepository.xml",
+        "lib/netstandard2.1/TanvirArjel.EFCore.QueryRepository.dll",
+        "lib/netstandard2.1/TanvirArjel.EFCore.QueryRepository.xml",
+        "tanvirarjel.efcore.queryrepository.1.5.0.nupkg.sha512",
+        "tanvirarjel.efcore.queryrepository.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -3543,23 +3595,24 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
+      "TanvirArjel.EFCore.GenericRepository >= 6.0.0",
       "TanvirArjel.EFCore.QueryRepository >= 1.5.0"
     ]
   },
   "packageFolders": {
-    "/Users/alifurkankizil/.nuget/packages/": {}
+    "/Users/aybarsarslan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
+      "projectUniqueName": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
       "projectName": "CoreRepo.Data",
-      "projectPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
-      "packagesPath": "/Users/alifurkankizil/.nuget/packages/",
-      "outputPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/obj/",
+      "projectPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
+      "packagesPath": "/Users/aybarsarslan/.nuget/packages/",
+      "outputPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alifurkankizil/.nuget/NuGet/NuGet.Config"
+        "/Users/aybarsarslan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3570,11 +3623,7 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {
-            "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-              "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -3608,6 +3657,14 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[7.0.0, )"
+          },
+          "TanvirArjel.EFCore.GenericRepository": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          },
+          "TanvirArjel.EFCore.QueryRepository": {
+            "target": "Package",
+            "version": "[1.5.0, )"
           }
         },
         "imports": [
@@ -3622,11 +3679,14 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }

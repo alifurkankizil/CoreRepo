@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>CoreRepo.Benchmark.DataBenchmark-20230822-162414</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.7, macOS Ventura 13.5 (22G74) [Darwin 22.6.0]
+Apple M1 Max, 1 CPU, 10 logical and 10 physical cores
+.NET SDK 7.0.306
+  [Host]     : .NET 7.0.9 (7.0.923.32018), Arm64 RyuJIT AdvSIMD
+  DefaultJob : .NET 7.0.9 (7.0.923.32018), Arm64 RyuJIT AdvSIMD
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>CoreRepo</td><td>57.30 ms</td><td>1.141 ms</td><td>1.842 ms</td><td>1000.0000</td><td>-</td><td>6.46 MB</td>
+</tr><tr><td>ModernRepo</td><td>58.52 ms</td><td>1.161 ms</td><td>2.345 ms</td><td>1111.1111</td><td>333.3333</td><td>7.2 MB</td>
+</tr></tbody></table>
+</body>
+</html>
