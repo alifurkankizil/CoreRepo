@@ -208,7 +208,7 @@ namespace CoreRepo.Api.Controllers
             specification.Includes = x => x.Include(y => y.ReceiptLines);
             
             var query = QueryRepository
-                .GetQueryable<ReceiptEntity>(specification);
+                .GetQueryable<ReceiptEntity>();
             
             var totalAmount = await query
                 .SelectMany(x => x.ReceiptLines)

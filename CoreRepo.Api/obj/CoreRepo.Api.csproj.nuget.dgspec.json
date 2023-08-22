@@ -1,343 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj": {}
+    "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj": {}
   },
   "projects": {
-    "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/TanvirArjel.EFCore.GenericRepository.csproj": {
-      "version": "6.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/TanvirArjel.EFCore.GenericRepository.csproj",
-        "projectName": "TanvirArjel.EFCore.GenericRepository",
-        "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/TanvirArjel.EFCore.GenericRepository.csproj",
-        "packagesPath": "/Users/alifurkankizil/.nuget/packages/",
-        "outputPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/alifurkankizil/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0",
-          "net7.0",
-          "netstandard2.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-              }
-            }
-          },
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-              }
-            }
-          },
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[6.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        },
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[5.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-      "version": "1.5.0",
-      "restore": {
-        "projectUniqueName": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj",
-        "projectName": "TanvirArjel.EFCore.QueryRepository",
-        "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj",
-        "packagesPath": "/Users/alifurkankizil/.nuget/packages/",
-        "outputPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/obj/",
-        "projectStyle": "PackageReference",
-        "crossTargeting": true,
-        "configFilePaths": [
-          "/Users/alifurkankizil/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0",
-          "net7.0",
-          "netstandard2.1"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          },
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          },
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[6.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            },
-            "System.Linq.Dynamic.Core": {
-              "target": "Package",
-              "version": "[1.2.*, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        },
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            },
-            "System.Linq.Dynamic.Core": {
-              "target": "Package",
-              "version": "[1.2.*, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        },
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[5.0.*, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.2.0-beta.354, )"
-            },
-            "System.Linq.Dynamic.Core": {
-              "target": "Package",
-              "version": "[1.2.*, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj": {
+    "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj",
+        "projectUniqueName": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj",
         "projectName": "CoreRepo.Api",
-        "projectPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj",
-        "packagesPath": "/Users/alifurkankizil/.nuget/packages/",
-        "outputPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Api/obj/",
+        "projectPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Api/CoreRepo.Api.csproj",
+        "packagesPath": "/Users/aybarsarslan/.nuget/packages/",
+        "outputPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alifurkankizil/.nuget/NuGet/NuGet.Config"
+          "/Users/aybarsarslan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/TanvirArjel.EFCore.GenericRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.GenericRepository/TanvirArjel.EFCore.GenericRepository.csproj"
-              },
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-              },
-              "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj": {
-                "projectPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj"
+              "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj": {
+                "projectPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj"
               }
             }
           }
@@ -402,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj": {
+    "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
+        "projectUniqueName": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
         "projectName": "CoreRepo.Data",
-        "projectPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
-        "packagesPath": "/Users/alifurkankizil/.nuget/packages/",
-        "outputPath": "/Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/obj/",
+        "projectPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/CoreRepo.Data.csproj",
+        "packagesPath": "/Users/aybarsarslan/.nuget/packages/",
+        "outputPath": "/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/alifurkankizil/.nuget/NuGet/NuGet.Config"
+          "/Users/aybarsarslan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -427,11 +118,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj": {
-                "projectPath": "/Users/alifurkankizil/Downloads/EFCore.GenericRepository-master/src/TanvirArjel.EFCore.QueryRepository/TanvirArjel.EFCore.QueryRepository.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -465,6 +152,14 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "TanvirArjel.EFCore.GenericRepository": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "TanvirArjel.EFCore.QueryRepository": {
+              "target": "Package",
+              "version": "[1.5.0, )"
             }
           },
           "imports": [
@@ -479,11 +174,14 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       }
     }

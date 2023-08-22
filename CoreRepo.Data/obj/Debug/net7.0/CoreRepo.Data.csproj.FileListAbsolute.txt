@@ -22,3 +22,17 @@
 /Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.pdb
 /Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.genruntimeconfig.cache
 /Users/alifurkankizil/RiderProjects/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/ref/CoreRepo.Data.dll
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/bin/Debug/net7.0/CoreRepo.Data.deps.json
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/bin/Debug/net7.0/CoreRepo.Data.runtimeconfig.json
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/bin/Debug/net7.0/CoreRepo.Data.dll
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/bin/Debug/net7.0/CoreRepo.Data.pdb
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.csproj.AssemblyReference.cache
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.AssemblyInfoInputs.cache
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.AssemblyInfo.cs
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.csproj.CoreCompileInputs.cache
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.dll
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/refint/CoreRepo.Data.dll
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.pdb
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/CoreRepo.Data.genruntimeconfig.cache
+/Users/aybarsarslan/Desktop/Ayb/Workout/2023/CoreRepo/CoreRepo.Data/obj/Debug/net7.0/ref/CoreRepo.Data.dll
