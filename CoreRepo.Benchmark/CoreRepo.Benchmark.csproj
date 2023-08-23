@@ -7,4 +7,23 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Downloads\EFCore.GenericRepository-master\src\TanvirArjel.EFCore.GenericRepository\TanvirArjel.EFCore.GenericRepository.csproj" />
+      <ProjectReference Include="..\..\..\Downloads\EFCore.GenericRepository-master\src\TanvirArjel.EFCore.QueryRepository\TanvirArjel.EFCore.QueryRepository.csproj" />
+      <ProjectReference Include="..\CoreRepo.Api\CoreRepo.Api.csproj" />
+      <ProjectReference Include="..\CoreRepo.Data\CoreRepo.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BenchmarkDotNet" Version="0.13.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
