@@ -12,5 +12,6 @@ public class ReceiptProfile : AutoMapper.Profile
         CreateMap<ReceiptModel, ReceiptEntity>();
         CreateMap<ReceiptLineModel, ReceiptLineEntity>();
         CreateMap<ReceiptLineTagModel, ReceiptLineTagEntity>();
+        CreateMap<ReceiptEntity, ReceiptResponse>();
     }
 }

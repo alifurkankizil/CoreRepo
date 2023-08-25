@@ -19,44 +19,20 @@ namespace CoreRepo.Benchmark;
 
 [MemoryDiagnoser]
 [Orderer(SummaryOrderPolicy.FastestToSlowest)]
-[SimpleJob(RunStrategy.ColdStart, launchCount:1)]
+[SimpleJob(RunStrategy.ColdStart, launchCount:50)]
 public class ControllerBenchmark
 {
     private ReceiptController _receiptController;
     private IServiceProvider _serviceProvider;
-    private Guid _receiptId = Guid.Parse("d581c0bf-e4ca-4684-f8bc-08db9d084e10");
-
-     private readonly ReceiptModel _receiptModel = new ReceiptModel
-    {
-        PaymentType = PaymentType.Cash,
-        Date = DateTimeOffset.Now,
-        ReceiptLines = new List<ReceiptLineModel>
-        {
-            new ReceiptLineModel
-            {
-                Amount = 1,
-                AmountType = AmountType.Credit,
-                CurrencyType = CurrencyType.Try,
-                ReceiptLineTags = new List<ReceiptLineTagModel>
-                {
-                    new ReceiptLineTagModel
-                    {
-                        Key = "ABC",
-                        Value = "DEF"
-                    }
-                }
-            }
-        }
-    };
-
+    private readonly Guid _receiptId = Guid.Parse("f70cc102-c3fd-2767-92c3-039ca4cad6df");
+    
     private readonly ReceiptSearchModel _searchModel = new ReceiptSearchModel
     {
         Date = new DateTimeOffset(new DateTime(2023, 1, 1)),
-        Value = "ABC",
         PaymentType = PaymentType.Cash,
         CurrencyType = CurrencyType.Try,
         PageIndex = 1,
-        PageSize = 1
+        PageSize = 100
     };
     
     
@@ -100,19 +76,6 @@ public class ControllerBenchmark
         }
     }
 
-   
-    [Benchmark]
-    public async Task AddV1()
-    {
-        await _receiptController.AddV1(_receiptModel);
-    }
-    
-    [Benchmark]
-    public async Task AddV2()
-    {
-        await _receiptController.AddV2(_receiptModel);
-    }
-    
     [Benchmark]
     public async Task GetByIdV1()
     {
@@ -123,12 +86,6 @@ public class ControllerBenchmark
     public async Task GetByIdV2()
     {
         await _receiptController.GetByIdV2(_receiptId);
-    }
-    
-    [Benchmark]
-    public async Task GetByIdV3()
-    {
-        await _receiptController.GetByIdV3(_receiptId);
     }
     
     [Benchmark]
@@ -166,18 +123,5 @@ public class ControllerBenchmark
     {
         await _receiptController.DetailSearchV2(_searchModel);
     }
-    
-    [Benchmark]
-    public async Task TotalAmountByIdV1()
-    {
-        await _receiptController.TotalAmountByIdV1(_receiptId);
-    }
-    
-    [Benchmark]
-    public async Task TotalAmountByIdV2()
-    {
-        await _receiptController.TotalAmountByIdV2(_receiptId);
-    }
-    
 }
 

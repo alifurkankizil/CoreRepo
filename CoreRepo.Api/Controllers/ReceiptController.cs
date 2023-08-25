@@ -6,6 +6,7 @@ using CoreRepo.Data.Infrastructure;
 using CoreRepo.Data.Models;
 using CoreRepo.Data.Receipt;
 using CoreRepo.Data.Specification;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TanvirArjel.EFCore.GenericRepository;
@@ -101,14 +102,16 @@ namespace CoreRepo.Api.Controllers
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> GetByIdV1(Guid id)
         {
-            return Ok(await UnitOfWork.Receipt.GetById(id));
+            var data = await UnitOfWork.Receipt.GetById(id);
+            if (data is null) return NotFound();
+            return Ok(Mapper.Map<ReceiptResponse>(data));
         }
         
         [MapToApiVersion("1.0")]
         [HttpGet("{id:guid}/detail")]
         public async Task<IActionResult> GetByIdDetailV1(Guid id)
         {
-            return Ok(await UnitOfWork.Receipt.GetByIdDetail(id));
+            return Ok(await UnitOfWork.Receipt.GetById(id));
         }
 
         [MapToApiVersion("2.0")]
@@ -117,7 +120,9 @@ namespace CoreRepo.Api.Controllers
         {
             var specification = new Specification<ReceiptEntity>();
             specification.Conditions.Add(x => x.Id == id);
-            return Ok(await QueryRepository.GetAsync(specification));
+            var data = await QueryRepository.GetAsync(specification);
+            if (data is null) return NotFound();
+            return Ok(Mapper.Map<ReceiptResponse>(data));
             //return Ok(await QueryRepository.GetByIdAsync<ReceiptEntity>(id));
         }
         
